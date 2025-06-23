@@ -13,9 +13,9 @@ body {
   position: fixed;
   z-index: 0;
   top: 0; left: 0; width: 100vw; height: 100vh;
-  background: linear-gradient(120deg, #232c3b 0%, #2196f3 40%, #ffb300 80%, #ff6a00 100%);
+  background: linear-gradient(135deg, #232c3b 0%, #2196f3 40%, #ffb300 100%);
   background-size: 200% 200%;
-  animation: gradientMove 10s ease-in-out infinite alternate;
+  animation: gradientMove 12s ease-in-out infinite alternate;
 }
 @keyframes gradientMove {
   0% { background-position: 0% 50%; }
@@ -82,6 +82,17 @@ body {
   /* Substitua por <img> do logo depois */
 }
 
+.main-card {
+  background: rgba(24,30,38,0.97);
+  border-radius: 28px;
+  box-shadow: 0 8px 40px 0 rgba(33,150,243,0.13), 0 2px 12px rgba(0,0,0,0.10);
+  max-width: 480px;
+  margin: 2.5rem auto 2rem auto;
+  padding: 2.2rem 2rem 1.5rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
 .hero {
   text-align: center;
   padding: 2.5rem 1rem 1.5rem 1rem;
@@ -97,7 +108,7 @@ body {
 
 .hero h1 {
   font-family: 'Poppins', Arial, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.35rem;
   font-weight: 700;
   margin-bottom: 1rem;
   background: linear-gradient(90deg, #ff6a00 30%, #ffb300 60%, #2196f3 100%);
@@ -109,6 +120,7 @@ body {
   color: #ffb300;
   font-size: 1.08rem;
   margin-bottom: 2rem;
+  font-weight: 500;
 }
 
 .cta-buttons {
@@ -120,8 +132,8 @@ body {
 }
 
 .btn {
-  font-size: 1rem;
-  padding: 0.7rem 1.4rem;
+  font-size: 1.08rem;
+  padding: 1rem 2.2rem;
   min-width: 220px;
   border: none;
   border-radius: 50px;
@@ -194,7 +206,7 @@ body {
   color: #ff6a00;
   font-weight: 600;
   margin-top: 1.2rem;
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   background: #232c3b99;
   border-radius: 12px;
   padding: 0.5rem 1rem;
@@ -267,6 +279,22 @@ body {
   }
 }
 
+.social-proof {
+  margin: 2.2rem 0 1.2rem 0;
+  text-align: center;
+}
+.members-count {
+  color: #ffb300;
+  font-size: 1.08rem;
+  font-weight: 600;
+  margin-bottom: 0.7rem;
+  background: #232c3b99;
+  border-radius: 12px;
+  padding: 0.6rem 1rem;
+  display: inline-block;
+  box-shadow: 0 2px 8px rgba(255,186,0,0.08);
+}
+
 .testimonial {
   text-align: center;
   margin: 1.2rem 0 0.5rem 0;
@@ -304,14 +332,23 @@ body {
   color: #ff6a00;
 }
 
+.footer p {
+  margin: 0.2rem 0;
+}
+
 /* Remove efeito circular azul */
 .hero::before {
   display: none;
 }
 
 @media (max-width: 600px) {
+  .main-card {
+    padding: 1.2rem 0.3rem 0.7rem 0.3rem;
+    margin: 1.2rem 0.2rem 1.2rem 0.2rem;
+    max-width: 98vw;
+  }
   .hero h1 {
-    font-size: 1.05rem;
+    font-size: 1.1rem;
   }
   .logo-img {
     width: 90px;
@@ -322,12 +359,10 @@ body {
     height: 110px;
   }
   .cta-buttons .btn {
-    font-size: 0.95rem;
-    padding: 0.6rem 1rem;
-    min-width: 140px;
-  }
-  .hero {
-    padding: 1.2rem 0.3rem 0.7rem 0.3rem;
+    font-size: 1.1rem;
+    padding: 1.1rem 0;
+    min-width: 90vw;
+    width: 90vw;
   }
   .benefits {
     flex-direction: column;
@@ -337,9 +372,6 @@ body {
   }
   .benefit {
     font-size: 0.97rem;
-  }
-  main, .hero {
-    max-width: 98vw;
   }
 }
 
