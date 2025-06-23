@@ -215,17 +215,21 @@ body {
 
 .benefit {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  font-size: 0.98rem;
+  justify-content: center;
+  font-size: 1rem;
   color: #ffb300;
   font-weight: 500;
   flex: 1;
+  gap: 0.5rem;
 }
 
 .benefit-icon {
-  font-size: 1.6rem;
-  margin-bottom: 0.3rem;
+  font-size: 1.5rem;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
 }
 
 .testimonial {
