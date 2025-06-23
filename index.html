@@ -18,6 +18,14 @@
   <meta name="twitter:title" content="Seleção de Ofertas 360">
   <meta name="twitter:description" content="Receba as melhores promoções de todo o Brasil, em 360º! Ofertas quentes, atualizadas e com desconto real – direto no seu WhatsApp!">
   <meta name="twitter:image" content="https://vitorlbatisti.github.io/lpgrupooffertas/logo.png">
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17087845516"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'AW-17087845516');
+  </script>
 </head>
 <body>
   <div class="animated-bg"></div>
@@ -47,12 +55,14 @@
       <section class="benefits-section">
         <h2>💡 Por que entrar no nosso grupo?</h2>
         <div class="benefits">
-          <div><span class="benefit-emoji">🔒</span><p>Garantia de origem</p></div>
-          <div><span class="benefit-emoji">📦</span><p>Ofertas diárias</p></div>
-          <div><span class="benefit-emoji">💬</span><p>Suporte via WhatsApp</p></div>
+          <div><img src="https://cdn-icons-png.flaticon.com/512/3064/3064197.png" alt="Garantia de origem" class="benefit-img"><p>Garantia de origem</p></div>
+          <div><img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" alt="Ofertas diárias" class="benefit-img"><p>Ofertas diárias</p></div>
+          <div><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Suporte via WhatsApp" class="benefit-img"><p>Suporte via WhatsApp</p></div>
         </div>
-        <p class="highlight">🔥 Mais de 1.200 pessoas já estão economizando. Junte-se agora!</p>
-        <p class="quote">“Entrar no grupo é grátis. Pagar mais caro por aí, não.”</p>
+        <div class="members-highlight">
+          <span class="counter" id="members-counter">1.200</span> pessoas já estão economizando. Junte-se agora!
+        </div>
+        <p class="quote">"Entrar no grupo é grátis. Pagar mais caro por aí, não."</p>
       </section>
     </section>
     <section class="flexblock-container">
@@ -71,6 +81,53 @@
         </div>
       </div>
     </section>
+    <!-- Seção Como Funciona -->
+    <section class="how-it-works">
+      <h2>Como funciona?</h2>
+      <div class="how-steps">
+        <div class="how-step">
+          <img src="https://cdn-icons-png.flaticon.com/512/1828/1828817.png" alt="Clique no botão" />
+          <span>1. Clique no botão</span>
+        </div>
+        <div class="how-step">
+          <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="Entre no grupo" />
+          <span>2. Entre no grupo</span>
+        </div>
+        <div class="how-step">
+          <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="Receba ofertas" />
+          <span>3. Receba ofertas</span>
+        </div>
+      </div>
+    </section>
+    <!-- Carrossel de Ofertas Ilustrativas -->
+    <section class="ofertas-carousel">
+      <h2>Exemplo de ofertas que você recebe</h2>
+      <div class="carousel">
+        <a href="https://produto.mercadolivre.com.br/MLB-4941863336-garrafa-de-cafe-termica-vacuum-jug-com-termmetro-digital-1l-_JM#polycard_client=offers&deal_print_id=8a7d31fe-1086-4581-b48e-483300aa743d&position=9&tracking_id=cc48375c-2fb8-4a8b-bc80-9ec47ccd540a" target="_blank" rel="noopener">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_825857-MLU72885737038_112023-F.webp" alt="Garrafa Térmica" class="carousel-img">
+        </a>
+        <a href="https://www.mercadolivre.com.br/samsung-galaxy-a25-5g-dual-sim-128gb-azul-escuro-6gb-ram/p/MLB34103803?pdp_filters=item_id%3AMLB3932141553#polycard_client=offers&wid=MLB3932141553&sid=offers&deal_print_id=48fc1194-413a-4523-a9ef-6002880339b1&tracking_id=b0c063e9-6162-4058-9dc0-0c721ed76054&position=13" target="_blank" rel="noopener">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_857857-MLA72885737038_112023-F.webp" alt="Samsung Galaxy A25" class="carousel-img">
+        </a>
+        <a href="https://produto.mercadolivre.com.br/MLB-3821492013-marmita-eletrica-bivolt-12v24v-e-110v220v-bolsa-termica-_JM#polycard_client=offers&deal_print_id=301d0601-c7d4-4c35-a96e-1c0deed11004&position=20&tracking_id=2be386f2-d155-40a1-ad53-309af8d8216e" target="_blank" rel="noopener">
+          <img src="https://http2.mlstatic.com/D_NQ_NP_2X_825857-MLB72885737038_112023-F.webp" alt="Marmita Elétrica" class="carousel-img">
+        </a>
+      </div>
+    </section>
+    <!-- Formulário de Contato -->
+    <section class="contato-section">
+      <h2>Dúvidas? Fale com a gente!</h2>
+      <form class="contato-form" action="mailto:vlbmarketing01@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="nome" placeholder="Seu nome" required>
+        <input type="email" name="email" placeholder="Seu e-mail" required>
+        <textarea name="mensagem" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <!-- Botão Flutuante WhatsApp -->
+    <a href="https://chat.whatsapp.com/FBQ5vLlsTLBCxX9RoP397c" class="whatsapp-float" target="_blank" aria-label="Entrar no grupo do WhatsApp">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+    </a>
   </main>
   <footer class="footer">
     <div class="footer-links">
@@ -80,5 +137,21 @@
     <p>© 2024 Seleção de Ofertas 360. Todos os direitos reservados.</p>
   </footer>
   <script src="scripts.js"></script>
+  <script>
+    // Contador animado de membros
+    function animateCounter(id, start, end, duration) {
+      let obj = document.getElementById(id);
+      let range = end - start;
+      let current = start;
+      let increment = end > start ? 1 : -1;
+      let stepTime = Math.abs(Math.floor(duration / range));
+      let timer = setInterval(function() {
+        current += increment;
+        obj.textContent = current.toLocaleString('pt-BR');
+        if (current == end) clearInterval(timer);
+      }, stepTime);
+    }
+    animateCounter('members-counter', 1100, 1200, 1200);
+  </script>
 </body>
 </html> 
