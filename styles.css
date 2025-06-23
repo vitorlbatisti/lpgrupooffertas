@@ -215,67 +215,55 @@ body {
 }
 
 .benefits-section {
-  margin-top: 2.2rem;
-}
-.benefits-title {
+  background: #111827;
+  border-radius: 16px;
+  color: #facc15;
   text-align: center;
-  color: #ffb300;
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-  letter-spacing: 0.01em;
+  padding: 2rem 1.5rem;
+  font-family: 'Inter', 'Poppins', Arial, sans-serif;
+  box-shadow: 0 0 12px rgba(0,0,0,0.4);
+  max-width: 600px;
+  margin: 2rem auto;
 }
 .benefits {
   display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
-  background: rgba(24,30,38,0.92);
-  border-radius: 16px;
-  box-shadow: 0 2px 12px rgba(255,186,0,0.06);
-  padding: 1rem 0.5rem;
+  justify-content: space-around;
+  gap: 1rem;
+  margin: 1rem 0;
+  flex-wrap: wrap;
 }
-.benefit {
+.benefits div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  text-align: center;
-  font-size: 1rem;
-  color: #ffb300;
-  font-weight: 500;
-  flex: 1;
-  gap: 0.4rem;
-  padding: 0.5rem;
-  transition: transform 0.2s ease, background 0.2s;
-  border-radius: 12px;
+  color: #fff;
+  font-size: 0.95rem;
+  width: 100px;
 }
-.benefit-icon {
-  font-size: 1.5rem;
-  margin-bottom: 0.1rem;
-  text-shadow: 0 0 4px rgba(255,255,255,0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.benefit-emoji {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
 }
-.benefit:hover {
-  transform: scale(1.05);
-  background-color: rgba(255, 186, 0, 0.08);
+.highlight {
+  font-weight: 700;
+  color: #facc15;
+  margin: 1rem 0 0.5rem;
 }
-@media (min-width: 600px) {
+.quote {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: #93c5fd;
+  margin-top: 0.3rem;
+}
+@media (max-width: 700px) {
   .benefits {
-    flex-direction: row;
-  }
-  .benefit {
-    flex-direction: row;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    text-align: left;
-    gap: 0.6rem;
-    font-size: 1rem;
-    padding: 0.8rem;
+    gap: 1.2rem;
   }
-  .benefit-icon {
-    font-size: 1.4rem;
-    margin-bottom: 0;
+  .benefits div {
+    width: 100%;
+    font-size: 1rem;
   }
 }
 
@@ -380,4 +368,55 @@ main, .hero {
   margin: 0 auto;
   position: relative;
   z-index: 1;
+}
+
+.flexblock-container {
+  margin: 2.5rem auto 2rem auto;
+  max-width: 540px;
+  padding: 0 1rem;
+}
+.flexblock {
+  display: flex;
+  justify-content: space-between;
+  background: #181e26;
+  border-radius: 22px;
+  box-shadow: 0 4px 24px 0 rgba(33,150,243,0.10), 0 2px 8px rgba(0,0,0,0.10);
+  padding: 1.5rem 1.2rem;
+  gap: 1.2rem;
+}
+.flexcol {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+  gap: 0.7rem;
+}
+.flexicon {
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-shadow: 0 2px 8px rgba(255,186,0,0.10);
+}
+.flextext {
+  color: #ffb300;
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+  font-size: 1.08rem;
+  font-weight: 600;
+  border-radius: 12px;
+  letter-spacing: 0.01em;
+}
+@media (max-width: 700px) {
+  .flexblock {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: stretch;
+    padding: 1.2rem 0.7rem;
+  }
+  .flexcol {
+    gap: 0.5rem;
+  }
 } 
