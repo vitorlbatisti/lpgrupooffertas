@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="favicon.png">
+  <!-- Phosphor Icons CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.0.3/src/css/phosphor.css">
   <meta property="og:title" content="Seleção de Ofertas 360">
   <meta property="og:description" content="Receba as melhores promoções de todo o Brasil, em 360º! Ofertas quentes, atualizadas e com desconto real – direto no seu WhatsApp! Mais de 1.000 membros. Vagas limitadas!">
   <meta property="og:image" content="https://vitorlbatisti.github.io/lpgrupooffertas/logo.png">
@@ -38,7 +40,6 @@
   <main>
     <section class="main-card">
       <section class="hero">
-        <div class="social-proof" style="margin-bottom: 1rem; color: #fada8f; font-weight: bold; font-size: 1.1rem; background: #232c3b; border-radius: 10px; padding: 0.5rem 1rem; box-shadow: 0 2px 8px rgba(255,186,0,0.10);">Mais de 1.000 membros já participam!</div>
         <h1> Receba as melhores promoções da internet TODO DIA no seu WhatsApp!</h1>
         <p class="subtitle">É grátis, sem spam e com ofertas reais. Aproveite descontos exclusivos e economize de verdade!</p>
         <div class="cta-buttons">
@@ -52,24 +53,29 @@
         <div class="urgency" style="background: #ff6a00; color: #fff; font-size: 1.1rem;">🎯 Vagas limitadas! Entre agora e garanta sua economia!</div>
       </section>
     </section>
-    <!-- Nova seção "Como funciona?" reduzida -->
-    <section style="background: linear-gradient(135deg, #001f3f, #0074D9); color: white; padding: 1.2rem 1rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.18); max-width: 420px; margin: 1.5rem auto;">
-      <h2 style="text-align: center; font-size: 1.25rem; margin-bottom: 1.1rem; font-weight: 700;">Em 3 passos simples 👇</h2>
-      <div style="display: flex; flex-direction: column; align-items: center; gap: 0.7rem;">
-        <div style="display: flex; align-items: center; gap: 0.7rem;">
-          <div style="font-size: 1.5rem;">➕</div>
-          <p style="font-weight: bold; font-size: 1rem; margin: 0;">1. Toque no botão acima</p>
+    <!-- Nova seção "Como funciona?" profissional -->
+    <section class="steps-section" style="background: linear-gradient(135deg, #001f3f, #0074D9); color: white; padding: 1.2rem 1rem; border-radius: 1rem; box-shadow: 0 4px 12px rgba(0,0,0,0.18); max-width: 420px; margin: 1.5rem auto;">
+      <h2 style="text-align: center; font-size: 1.25rem; margin-bottom: 0.5rem; font-weight: 700;">Em 3 passos simples <span>👇</span></h2>
+      <p style="font-size: 0.9rem; color: #e0e0e0; text-align: center; margin-bottom: 1.1rem;">Rápido, simples e direto no seu WhatsApp</p>
+      <div class="steps-list">
+        <div class="step-item">
+          <i class="ph ph-plus-circle"></i>
+          <span class="step-text"><b>1. Toque no botão acima</b></span>
         </div>
-        <div style="display: flex; align-items: center; gap: 0.7rem;">
-          <div style="font-size: 1.5rem;">💬</div>
-          <p style="font-weight: bold; font-size: 1rem; margin: 0;">2. Entre no grupo exclusivo</p>
+        <div class="step-item">
+          <i class="ph ph-chat-circle-dots"></i>
+          <span class="step-text"><b>2. Entre no grupo exclusivo</b></span>
         </div>
-        <div style="display: flex; align-items: center; gap: 0.7rem;">
-          <div style="font-size: 1.5rem;">💸</div>
-          <p style="font-weight: bold; font-size: 1rem; margin: 0;">3. Economize com ofertas reais</p>
+        <div class="step-item">
+          <i class="ph ph-tag"></i>
+          <span class="step-text"><b>3. Economize com ofertas reais</b></span>
         </div>
       </div>
-      <p style="text-align: center; margin-top: 1rem; font-size: 0.85rem; color: #FFD700;">100% gratuito • Sem spam • Ofertas todos os dias</p>
+      <div class="steps-badge">
+        <span><i class="ph ph-check-circle"></i> Totalmente grátis</span>
+        <span><i class="ph ph-lock-key"></i> Sem spam</span>
+        <span><i class="ph ph-shopping-bag"></i> Ofertas novas todo dia</span>
+      </div>
     </section>
     
     <a href="https://chat.whatsapp.com/FBQ5vLlsTLBCxX9RoP397c" class="whatsapp-float" target="_blank" aria-label="Entrar no grupo do WhatsApp">
@@ -100,4 +106,5 @@
     animateCounter('members-counter', 1100, 1200, 1200);
   </script>
 </body>
+</html> 
 </html> 

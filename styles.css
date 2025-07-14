@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', 'Inter', Arial, sans-serif;
-  background-color: #0a2540; /* Azul escuro */
+  background-color: #041322; /* Azul escuro */
   color: #f6f6f6;
   position: relative;
   min-height: 100vh;
@@ -13,7 +13,7 @@ body {
   position: fixed;
   z-index: 0;
   top: 0; left: 0; width: 100vw; height: 100vh;
-  background: linear-gradient(135deg, #232c3b 0%, #2196f3 40%, #ffb300 100%);
+  background: linear-gradient(135deg, #0d1626 0%, #234f73 40%, #487fdd 100%);
   background-size: 200% 200%;
   animation: gradientMove 12s ease-in-out infinite alternate;
 }
@@ -641,4 +641,74 @@ main, .hero {
     flex-direction: column;
     gap: 1.2rem;
   }
+} 
+
+.steps-section {
+  background: linear-gradient(135deg, #001f3f, #0074D9);
+  color: white;
+  padding: 1.2rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.18);
+  max-width: 420px;
+  margin: 1.5rem auto;
+}
+.steps-list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin-bottom: 1.1rem;
+}
+.step-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  font-size: 1rem;
+  background: rgba(255,255,255,0.04);
+  border-radius: 8px;
+  padding: 0.4rem 0.7rem;
+  transition: box-shadow 0.18s, transform 0.18s, background 0.18s;
+  cursor: pointer;
+  animation: fadeInStep 0.7s ease;
+}
+.step-item i.ph {
+  font-size: 2rem;
+  color: #fada8f;
+  min-width: 2.2rem;
+  transition: color 0.18s;
+}
+.step-item:hover {
+  box-shadow: 0 2px 12px #0074D9aa;
+  background: #00336644;
+  transform: translateY(-2px) scale(1.04);
+}
+.steps-badge {
+  display: flex;
+  justify-content: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  background: #003366;
+  border-radius: 8px;
+  padding: 0.5rem 0.7rem;
+  font-size: 0.93rem;
+  color: #FFD700;
+  margin-top: 1rem;
+  font-weight: 600;
+  box-shadow: 0 1px 6px #001f3f33;
+}
+.steps-badge i.ph {
+  font-size: 1.1rem;
+  color: #FFD700;
+  margin-right: 0.2em;
+}
+@keyframes fadeInStep {
+  from { opacity: 0; transform: translateY(16px) scale(0.98); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@media (max-width: 600px) {
+  .steps-section { max-width: 98vw; padding: 1.1rem 0.2rem; }
+  .steps-list { gap: 0.5rem; }
+  .step-item { font-size: 0.97rem; padding: 0.3rem 0.4rem; }
+  .step-item i.ph { font-size: 1.5rem; }
+  .steps-badge { font-size: 0.89rem; padding: 0.4rem 0.2rem; }
 } 
