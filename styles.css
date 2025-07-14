@@ -83,9 +83,9 @@ body {
 }
 
 .main-card {
-  background: rgba(24,30,38,0.97);
+  background: linear-gradient(135deg, #232c3b 60%, #181e26 100%);
   border-radius: 28px;
-  box-shadow: 0 8px 40px 0 rgba(33,150,243,0.13), 0 2px 12px rgba(0,0,0,0.10);
+  box-shadow: 0 8px 40px 0 rgba(33,150,243,0.18), 0 2px 12px rgba(255,186,0,0.13);
   max-width: 480px;
   margin: 2.5rem auto 2rem auto;
   padding: 2.2rem 2rem 1.5rem 2rem;
@@ -150,20 +150,29 @@ body {
 }
 
 .btn-whatsapp {
-  background: linear-gradient(90deg, #2196f3 60%, #ffb300 100%);
+  background: linear-gradient(90deg, #2196f3 0%, #ffb300 100%);
   color: #fff;
-  box-shadow: 0 4px 16px rgba(33,150,243,0.18);
+  box-shadow: 0 4px 16px rgba(33,150,243,0.25), 0 2px 12px rgba(255,186,0,0.18);
+  border: 2px solid #ffb300;
+  font-size: 1.15rem;
 }
 .btn-whatsapp:hover {
-  background: linear-gradient(90deg, #2196f3 80%, #ffb300 100%);
+  background: linear-gradient(90deg, #ffb300 0%, #2196f3 100%);
+  color: #232c3b;
+  border: 2px solid #2196f3;
 }
 
 .btn-instagram {
   background: linear-gradient(90deg, #ff6a00 0%, #ffb300 100%);
   color: #fff;
+  box-shadow: 0 4px 16px rgba(255,106,0,0.18), 0 2px 12px rgba(255,186,0,0.18);
+  border: 2px solid #ff6a00;
+  font-size: 1.15rem;
 }
 .btn-instagram:hover {
-  background: linear-gradient(90deg, #ffb300 30%, #ff6a00 100%);
+  background: linear-gradient(90deg, #ffb300 0%, #ff6a00 100%);
+  color: #232c3b;
+  border: 2px solid #ffb300;
 }
 
 .btn-ml {
@@ -203,15 +212,16 @@ body {
 }
 
 .urgency {
-  color: #ff6a00;
-  font-weight: 600;
+  color: #fff;
+  background: #ff6a00;
+  font-weight: 700;
   margin-top: 1.2rem;
-  font-size: 1.08rem;
-  background: #232c3b99;
+  font-size: 1.1rem;
   border-radius: 12px;
-  padding: 0.5rem 1rem;
-  box-shadow: 0 2px 8px rgba(255,186,0,0.08);
+  padding: 0.7rem 1.2rem;
+  box-shadow: 0 2px 8px rgba(255,106,0,0.18);
   display: inline-block;
+  letter-spacing: 0.01em;
 }
 
 .benefits-section {
@@ -268,8 +278,15 @@ body {
 }
 
 .social-proof {
-  margin: 2.2rem 0 1.2rem 0;
-  text-align: center;
+  color: #ffb300;
+  background: #232c3b;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  box-shadow: 0 2px 8px rgba(255,186,0,0.10);
+  margin-bottom: 1rem;
+  display: inline-block;
 }
 .members-count {
   color: #ffb300;
