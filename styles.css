@@ -712,3 +712,42 @@ main, .hero {
   .step-item i.ph { font-size: 1.5rem; }
   .steps-badge { font-size: 0.89rem; padding: 0.4rem 0.2rem; }
 } 
+
+.step-card {
+  background: #fff !important;
+  color: #0074D9 !important;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  border: none;
+  font-weight: 600;
+  font-size: 1rem;
+  padding: 12px 1rem;
+  margin: 0 auto;
+  width: 100%;
+  transition: box-shadow 0.18s, transform 0.18s, background 0.18s, color 0.18s;
+}
+.step-card i.ph {
+  color: #0074D9 !important;
+}
+.step-card:hover {
+  box-shadow: 0 4px 16px #00c3ff33;
+  background: #f4faff !important;
+  color: #003366 !important;
+}
+.steps-benefits {
+  background: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  color: #003366 !important;
+  font-size: 0.98rem !important;
+  font-weight: 600 !important;
+  gap: 1.2rem !important;
+  margin-top: 1.2rem !important;
+  justify-content: center !important;
+  align-items: center !important;
+  flex-wrap: wrap !important;
+}
+.steps-benefits i.ph {
+  font-size: 1.1rem;
+  margin-right: 0.2em;
+} 
